@@ -127,8 +127,8 @@ function tellJoke(joke) {
 // Get jokes from API
 async function getJokes() {
 	let joke = '';
-	// const API_URL =
-	('https://sv443.net/jokeapi/v2/joke/Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist');
+	const API_URL =
+		'https://sv443.net/jokeapi/v2/joke/Miscellaneous,Pun?blacklistFlags=nsfw,religious,political,racist,sexist';
 	try {
 		const res = await fetch(API_URL);
 		const data = await res.json();
