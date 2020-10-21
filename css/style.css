@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: skyblue;
+}
+
+button {
+	cursor: pointer;
+	outline: none;
+	width: 200px;
+	height: 50px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 20px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	background: #fa8719;
+	box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+	background: #ff7b00;
+}
+
+button:active {
+	transform: scale(0.98);
+}
+
+button:disabled {
+	cursor: default;
+	filter: brightness(30%);
+}
+
+.container {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url(../img/source.gif);
+	background-size: 700px;
+	background-position: 400px center;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+	.container {
+		background-size: 600px;
+		background-position: center center;
+	}
+
+	button {
+		box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+	}
+}
